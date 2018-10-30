@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "ukwest"
+        },
+        "networkInterfaceName": {
+            "value": "table3arcoreosvm226"
+        },
+        "networkSecurityGroupName": {
+            "value": "table3arcoreosvm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualNetworkName": {
+            "value": "table3arcoreosrg-vnet"
+        },
+        "addressPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.1.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "table3arcoreosvm-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "virtualMachineName": {
+            "value": "table3arcoreosvm"
+        },
+        "virtualMachineRG": {
+            "value": "table3arcoreosrg"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "azureops"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSw6fC1htu+W2uzQLG86wvZ0w4pG/qXxMlpS33luqdVa1Ff2F9njU37S5qpD5Z4CkgS2xkBsx7njLPnf46AeJt6U6HULyG7x9WrdF1R8syhBr0oPpiYLdOaYZu9CVbvqUPaTXOgp7miON4Dad7F2p6cz+YtHw5dt81jkHhtQLSeXOMDViV89a71sfQ6zEiXNEq9NHPRoMoBd7Td6EDrBO5Z9YfUgRNF2+VD7dAhs8V6KK9qYh7G5TqYvPs1UZ2fMejLiCfDu9DMfhlgSH4BUAhU66jIjsMFHQK49xxxXMms9UAUvezzijOdAuyetVgd+j8Aj4O2GlYUHHhpU1QawyV"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "table3arcoreosrgdiag"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/table3arcoreosrgdiag"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
+        }
+    }
+}
